@@ -122,6 +122,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pusher/7.0.3/pusher.min.js"></script>
     <script>
       window.pusher = new Pusher("420e941c25574fda6378", {
+        cluster: 'us2',
         authEndpoint: "{% url 'agora-pusher-auth' %}",
         auth: {
           headers: {
